@@ -3,6 +3,8 @@
 2. wrote pseudocodes
 3. convert pseudocodes to codes
 4. run test to find bugs
+5. review codes for optimisation
+7. compared final solution with problems
 
 
 
