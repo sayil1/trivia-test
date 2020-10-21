@@ -1,0 +1,39 @@
+<mat-toolbar color="primary" class="head">
+
+    <span>Trivia Quiz</span> <br>
+    <span>
+        <h1>Full Name: {{details.name}}</h1>
+    </span> <br>
+    <span>
+        <h1>ID: {{details.id}}</h1>
+    </span>
+
+    <mat-toolbar-row>
+        <span class="example-spacer"></span>
+        <span style="text-align:center">Time Left : {{time}} </span>
+        <span></span>
+    </mat-toolbar-row>
+
+
+</mat-toolbar>
+
+
+<div class="body">
+
+
+
+
+    <!-- loop through to questions to create radio buttons -->
+    <div *ngFor="let item of randomQuestion; let i = index">
+        <mat-radio-group [(ngModel)]="answer[i]" class="example-radio-group" aria-label="Select an option">
+            <label>{{item.question}}</label>
+            <mat-radio-button value="A">{{item.A}}</mat-radio-button>
+            <mat-radio-button value="B">{{item.B}}</mat-radio-button>
+            <mat-radio-button value="C">{{item.C}}</mat-radio-button>
+            <mat-radio-button value="D">{{item.D}}</mat-radio-button>
+        </mat-radio-group>
+    </div>
+
+    <button (click)="submit()" mat-raised-button color="accent"> submit</button>
+
+</div>

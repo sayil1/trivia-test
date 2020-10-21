@@ -1,0 +1,30 @@
+
+
+<mat-card class="example-card">
+  <div style="text-align: center;">
+    <h1>Trivia Quiz</h1>
+    <h1>Enter Details To Proceed</h1>
+  </div>
+   
+    <mat-card-content>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Full Name</mat-label>
+            <input matInput [(ngModel)]="name">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>ID Number</mat-label>
+            <input matInput [(ngModel)]="id">
+        </mat-form-field>
+
+        
+
+        <p>
+
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+
+        <button (click)="proceed()" mat-raised-button color="accent">Proceed</button>
+    </mat-card-actions>
+</mat-card>
