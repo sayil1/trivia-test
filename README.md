@@ -1,3 +1,12 @@
+# How Problem was approached
+1. took some time to understand the problem and its requirements
+2. wrote pseudocodes
+3. convert pseudocodes to codes
+4. run test to find bugs
+
+
+
+
 # TriviaQuiz
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
